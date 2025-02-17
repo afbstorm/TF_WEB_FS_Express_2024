@@ -15,8 +15,8 @@
   ```javascript
     "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.ejs",
-    "dev": "node --watch index.ejs"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
     }, 
   ```
   - node --watch index.ejs permet de remplacer la dépendance nodemon en ajoutant nativement un hot-reload à notre application
