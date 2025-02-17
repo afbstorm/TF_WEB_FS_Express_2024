@@ -1,0 +1,32 @@
+{
+  "name": "demo_01_intro",
+  "version": "0.1.0",
+  "description": "Première démo d'expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afbstorm/TF_WEB_FS_Express_2024.git"
+  },
+  "keywords": [
+    "demo",
+    "express"
+  ],
+  "author": "fullstack web dev de l'e6k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afbstorm/TF_WEB_FS_Express_2024/issues"
+  },
+  "homepage": "https://github.com/afbstorm/TF_WEB_FS_Express_2024#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.0.1"
+  },
+  "devDependencies": {
+
+  }
+}
