@@ -9,3 +9,16 @@
 - npm init -y
   - npm init -y va créer une configuration de base en bypassant les questions de création
 
+### package.json 
+
+- Scripts: 
+  ```javascript
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+    }, 
+  ```
+  - node --watch index.js permet de remplacer la dépendance nodemon en ajoutant nativement un hot-reload à notre application
+
+
