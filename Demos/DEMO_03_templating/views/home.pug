@@ -1,0 +1,19 @@
+extends layout
+
+block main
+    // h1= title
+    h1 #{title}
+    p.welcome= welcome
+
+    // Création d'une div en pug
+    // Autre possibilité pour la création d'une div
+    // #features.toto.jambon
+    .features
+        .feature
+            h2 Users
+            p Users list
+            a.button(href='/users') See all users
+        .feature
+            h2 Products
+            p Products list
+            a.button(href='/products') See all products

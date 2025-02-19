@@ -1,0 +1,21 @@
+html(lang=fr)
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        // #{title} -> appel de variable pour afficher sa valeur au moment du rendu HTML
+        title #{title}
+        link(rel='stylesheet', href='/css/index.css')
+    body
+        nav.navbar
+            a.logo(href='') Première application MVC des web dev de l'e6k !
+            ul.nav-links
+                // Deux syntaxes pour le même résultat
+                // La première en en indentation
+                // La deuxième est en inline
+                li
+                    a(href='') Users
+                li: a(href='') Products
+
+        main.container
+            block main
+
