@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    main
+        h2 Une question ? Contactez-nous
+        form(action='/contact', method='POST')
+            label(for="email") Email:
+            input(type="email", name="email")
+            label(for="message") Message:
+            textarea(name="message")
+            button(type="submit") Envoyer

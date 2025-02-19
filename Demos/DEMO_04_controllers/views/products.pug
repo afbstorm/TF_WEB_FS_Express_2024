@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    main
+        h3 Liste des produits particuliers
+        ul
+            each product in products
+                li
+                    a(href=`products/details/${product.id}`)= product.name

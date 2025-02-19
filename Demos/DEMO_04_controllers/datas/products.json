@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Ordinateur portable",
+    "price": 999.99
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "price": 699.99
+  },
+  {
+    "id": 3,
+    "name": "Casque audio",
+    "price": 149.99
+  },
+  {
+    "id": 4,
+    "name": "Tablette",
+    "price": 449.99
+  },
+  {
+    "id": 5,
+    "name": "Montre connectée",
+    "price": 299.99
+  },
+  {
+    "id": 6,
+    "name": "Enceinte Bluetooth",
+    "price": 89.99
+  },
+  {
+    "id": 7,
+    "name": "Clavier sans fil",
+    "price": 59.99
+  },
+  {
+    "id": 8,
+    "name": "Souris ergonomique",
+    "price": 45.99
+  },
+  {
+    "id": 9,
+    "name": "Écran 27 pouces",
+    "price": 299.99
+  },
+  {
+    "id": 10,
+    "name": "Webcam HD",
+    "price": 79.99
+  },
+  {
+    "id": 11,
+    "name": "Disque dur externe",
+    "price": 129.99
+  },
+  {
+    "id": 12,
+    "name": "Imprimante multifonction",
+    "price": 199.99
+  },
+  {
+    "id": 13,
+    "name": "Routeur WiFi",
+    "price": 89.99
+  },
+  {
+    "id": 14,
+    "name": "Batterie externe",
+    "price": 39.99
+  },
+  {
+    "id": 15,
+    "name": "Câble HDMI",
+    "price": 19.99
+  },
+  {
+    "id": 16,
+    "name": "Station d'accueil",
+    "price": 159.99
+  },
+  {
+    "id": 17,
+    "name": "Support pour ordinateur portable",
+    "price": 29.99
+  },
+  {
+    "id": 18,
+    "name": "Tapis de souris",
+    "price": 14.99
+  },
+  {
+    "id": 19,
+    "name": "Hub USB",
+    "price": 49.99
+  },
+  {
+    "id": 20,
+    "name": "Microphone USB",
+    "price": 89.99
+  }
+]
