@@ -1,0 +1,14 @@
+extends ../layout
+
+block main
+    .profile
+        h1= title
+        .card
+            if product.image
+                img(src=`/images/${product.image}`)
+            h2= product.name
+            p= product.description
+            p Prix: #{product.price} €
+            //p(class={'available': product.available, 'unavailable': !product.available})= product.available ? "Disponible" : 'Non disponible'
+            p(class=(product.available ? "available" : "unavailable"))= product.available ? "Disponible" : 'Non disponible'
+            a.button(href='/products') Back

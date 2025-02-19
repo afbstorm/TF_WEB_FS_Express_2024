@@ -7,14 +7,15 @@ html(lang=fr)
         link(rel='stylesheet', href='/css/index.css')
     body
         nav.navbar
-            a.logo(href='') Première application MVC des web dev de l'e6k !
-            ul.nav-links
-                // Deux syntaxes pour le même résultat
-                // La première en en indentation
-                // La deuxième est en inline
-                li
-                    a(href='') Users
-                li: a(href='') Products
+            .nav-content
+                a.logo(href='') Première application MVC des web dev de l'e6k !
+                ul.nav-links
+                    // Deux syntaxes pour le même résultat
+                    // La première en en indentation
+                    // La deuxième est en inline
+                    li
+                        a(href='/users') Users
+                    li: a(href='/products') Products
 
         main.container
             block main
