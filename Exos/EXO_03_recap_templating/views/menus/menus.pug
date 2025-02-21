@@ -1,0 +1,44 @@
+extends ../layout
+
+block content
+    div
+        h2 Os nossos carta
+
+        // Entradas
+        section
+            h4 Entradas
+            div
+                ul
+                    each entry in entries
+                        li
+                            div
+                                a(href=`/menus/details/entrees/${entry.id}`)
+                                    span #{entry.nom}
+                                    img(src=entry.image_url alt=entry.nom)
+                                span #{entry.prix} €
+
+        // Pratos
+        section
+            h4 Pratos
+            div
+                ul
+                    each dish in mainDishes
+                        li
+                            div
+                                a(href=`/menus/details/plats/${dish.id}`)
+                                    span #{dish.nom}
+                                    img(src=dish.image_url alt=dish.nom)
+                                span #{dish.prix} €
+
+        // Sobremesas
+        section
+            h4 Sobremesas
+            div
+                ul
+                    each dessert in desserts
+                        li
+                            div
+                                a(href=`/menus/details/desserts/${dessert.id}`)
+                                    span #{dessert.nom}
+                                    img(src=dessert.image_url alt=dessert.nom)
+                                span #{dessert.prix} €

@@ -1,0 +1,80 @@
+extends ../layout
+
+block content
+    div
+        h1 Ajouter un nouveau plat
+
+        form(action='/dashboard/add' method='POST')
+            div
+                label(for="category") Catégorie :
+                select(name="category" required)
+                    option(value='') Selectionnez une catégorie
+                    option(value='entrees') Entrée
+                    option(value='plats') Plat
+                    option(value='desserts') Dessert
+                    option(value='vins') Vins
+
+            div
+                label(for='name') Nom du plat :
+                input(type='text' name="name" required)
+            div
+                label(for='price') Prix (€) :
+                input(type='number' name="price" required)
+            div
+                label(for='description') Description :
+                textarea(name="description" rows=3)
+            div
+                label(for='image') URL de l'image
+                input(type='url' name="image")
+
+            h2 Ingrédients :
+            #ingredients-list
+                div
+                    input(type='text' name='ingredients[]' placeholder='Nouvel ingrédient')
+                    button(type='button' onclick='addIngredient()') +
+
+            h2 Allergènes :
+            div
+                div
+                    input(type='checkbox' name='allergens[]' value='gluten')
+                    label(for='gluten') Gluten
+                div
+                    input(type='checkbox' name='allergens[]' value='poisson')
+                    label(for='poisson') Poisson
+                div
+                    input(type='checkbox' name='allergens[]' value='fruits de mer')
+                    label(for='fruits-mer') Fruits de mer
+                div
+                    input(type='checkbox' name='allergens[]' value='oeufs')
+                    label(for='oeufs') Oeufs
+                div
+                    input(type='checkbox' name='allergens[]' value='lait')
+                    label(for='lait') Lait
+                div
+                    input(type='checkbox' name='allergens[]' value='mollusques')
+                    label(for='mollusques') Mollusques
+                div
+                    input(type='checkbox' name='allergens[]' value='noix')
+                    label(for='noix') Noix
+
+            div
+                button(type='submit') Ajouter
+
+    script.
+
+        function addIngredient() {
+            const list = document.getElementById('ingredients-list');
+            const div = document.createElement('div');
+
+            div.innerHTML = `
+            <input type='text' name='ingredients[]' placeholder='Nouvel ingrédient'>
+            <button type="button" onclick="removeIngredient(this)">-</button>
+            `;
+            list.appendChild(div);
+        }
+
+        function removeIngredient(button) {
+            button.parentElement.remove();
+        }
+
+

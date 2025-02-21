@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    div
+        if message
+            div
+                h3 #{message}
+
+            div
+                p Nascido do amor de um emigrante português pela sua cozinha de origem, “O Fado” traz um autêntico sabor português ao Boulevard Joseph Tirou em Charleroi.
+
+            div
+                h3 Os nossos pratos do momento :
+
+                div
+                    each dish in dishes
+                        div
+                            img(src=dish.image_url)
+                            a(href=`/menus/details/plats/${dish.plat_id}`) #{dish.nom}
+
+        else
+            div
+                p Nascido do amor de um emigrante português pela sua cozinha de origem, “O Fado” traz um autêntico sabor português ao Boulevard Joseph Tirou em Charleroi.
+
+            div
+                h3 Os nossos pratos do momento :
+
+                div
+                     each dish in dishes
+                         div
+                             img(src=dish.image_url)
+                             a(href=`/menus/details/plats/${dish.plat_id}`) #{dish.nom}

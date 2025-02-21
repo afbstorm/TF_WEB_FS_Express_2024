@@ -1,0 +1,19 @@
+doctype html
+html(lang=pt)
+    head
+        meta(name='description' content='Restaurant O Fado')
+        title O Fado
+        link(rel="stylesheet", href='/css/index.css')
+
+    body
+        include header
+            nav
+                ul
+                    li: a(href='/') Home
+                    li: a(href='/menus') Carta
+                    li: a(href='/dashboard') Administraçaõ
+
+        block content
+
+        include footer
+
