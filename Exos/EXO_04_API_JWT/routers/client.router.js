@@ -11,11 +11,11 @@ const clientController = require("../controllers/client.controller");
 //     .post()
 //     .patch()
 
-router.get("", () => {});
+router.get("", clientController.findAll);
 // http://localhost:3000/api/clients/
 router.post("", clientController.create);
-router.get("/:id", () => {});
-router.put("/:id", () => {});
-router.delete("/:id", () => {});
+router.get("/:id", clientController.findOne);
+router.put("/:id", clientController.update);
+router.delete("/:id", clientController.delete);
 
 module.exports = router;
